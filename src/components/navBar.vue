@@ -13,7 +13,7 @@ export default {
   <div class="position-absolute end-0 " id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
-        <a class="nav-link text-white" href="#">Home </a>          
+        <a class="nav-link text-white" href="#">CV </a>          
       </li>
       <li class="nav-item active">
         <a class="nav-link text-white" href="#">Projects</a>          
