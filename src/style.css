@@ -19,6 +19,11 @@
   src: url('./fonts/SCRIPTIN.otf');
 }
 
+@font-face {
+  font-family: "Roboto-Mono";
+  src: url('./fonts/RobotoMono-ExtraLight.otf');
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -57,9 +62,8 @@ button:focus-visible {
 }
 
 #app {
-  
   margin: 0 auto;
-  
+  BACKGROUND-COLOR: BLACK;
   text-align: center;
 }
 
