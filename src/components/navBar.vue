@@ -13,14 +13,14 @@ export default {
   <div class="position-absolute end-0 " id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
-        <a class="nav-link text-white roboto" href="#"><span class="num_labels">01.</span>&nbsp;CV </a>          
+        <a class="nav-link text-white roboto" href="#aboutme"><span class="num_labels">01.</span>&nbsp;About Me </a>          
       </li>
       <li class="nav-item active">
-        <a class="nav-link text-white roboto" href="#"><span class="num_labels">02.</span>&nbsp;Projects</a>          
+        <a class="nav-link text-white roboto" href="#project"><span class="num_labels">02.</span>&nbsp;Projects</a>          
       </li>
        
       <li class="nav-item active">
-        <a class="nav-link text-white roboto" href="#"><span class="num_labels">03.</span>&nbsp;Contact</a>          
+        <a class="nav-link text-white roboto" href="#contact"><span class="num_labels">03.</span>&nbsp;Contact</a>          
       </li>
       
            

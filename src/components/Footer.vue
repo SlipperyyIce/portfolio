@@ -7,7 +7,7 @@ export default {
   
   <div class="footer">
     <div style="position: relative; height: 50px; top: -50px; left: -15px ">
-    <a href=#><img src="./assets/git_icon.png" style="width: 35px; height: 35px;" /></a>
+    <a href="https://github.com/SlipperyyIce" target="_blank"><img src="./assets/git_icon.png" style="width: 35px; height: 35px;" /></a>
     
     </div>
   </div>
