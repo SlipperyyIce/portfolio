@@ -15,7 +15,7 @@ import { defineComponent } from 'vue'
     <button type="button" class="btn btn-outline-success roboto" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get in Touch  </button>
     </div>
   </div>
-  <div class="container">
+  <div class="container container-s">
     <div class="text-white text-start">
       <div class="about">
         <p id="aboutme" class="aquamarine roboto">01.&nbsp;</p>
@@ -43,14 +43,15 @@ import { defineComponent } from 'vue'
         <div class="position-absolute end-0">
             <p class="aquamarine roboto">Featured Project</p>
             <h5 class="card-title pb-2">Expenses App</h5>
-            <p class="card-text roboto bg-dark prj-overview">This project shows an expense application I made using Google's Firebase api. Allowing users to submit expenses which can then be approved or rejected by a line manager.</p>
+            <div class="prj-info">
+              <p class="card-text roboto bg-dark prj-overview">This project shows an expense application I made using Google's Firebase api. Allowing users to submit expenses which can then be approved or rejected by a line manager.</p>            
+              <p class="grey">Firebase API&nbsp;&nbsp;  Next.js</p>
             
-            <p class="grey">Firebase API&nbsp;&nbsp;  Next.js</p>
-            
-            <span>
-              <a href="https://github.com/SlipperyyIce/fdm-expenses-app-main" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
-              <a href="https://slipperyyice.github.io/fdm-expenses-app-main/" target="_blank"><img src="./assets/hyperlink_icon.png" class="icon2"></a>
-            </span>              
+              <span>
+                <a href="https://github.com/SlipperyyIce/fdm-expenses-app-main" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
+                <a href="https://slipperyyice.github.io/fdm-expenses-app-main/" target="_blank"><img src="./assets/hyperlink_icon.png" class="icon2"></a>
+              </span> 
+            </div>             
         </div>        
       </div> 
       
@@ -62,13 +63,15 @@ import { defineComponent } from 'vue'
         <div class="position-absolute start-0">
             <p class="aquamarine roboto">Featured Project</p>
             <h5 class="card-title pb-2">DL Classification</h5>
-            <p class="card-text roboto bg-dark prj-overview">MATLAB code for the deep learning model I trained for my final year project to classiy different signals.</p>
-            
-            <p class="grey">MATLAB</p>
-            
-            <span>
-              <a href="https://github.com/SlipperyyIce/DeepLearning-SpectrumSensing" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
-            </span>              
+            <div class="prj-info">
+              <p class="card-text roboto bg-dark prj-overview">MATLAB code for the deep learning model I trained for my final year project to classiy different signals.</p>
+              
+              <p class="grey">MATLAB</p>
+              
+              <span>
+                <a href="https://github.com/SlipperyyIce/DeepLearning-SpectrumSensing" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
+              </span> 
+            </div>             
         </div>        
       </div>
 
@@ -79,14 +82,16 @@ import { defineComponent } from 'vue'
         <div class="position-absolute end-0">
             <p class="aquamarine roboto">Featured Project</p>
             <h5 class="card-title pb-2">Blackjack</h5>
-            <p class="card-text roboto bg-dark prj-overview">A blackjack website I crafted from scratch, showcasing my  technical skills and expertise as a developer with a passion for creating immersive gaming experiences.</p>
-            
-            <p class="grey">Vue.js</p>
-            
-            <span>
-              <a href="https://github.com/SlipperyyIce/blackjack" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
-              <a href="https://slipperyyice.github.io/blackjack/" target="_blank"><img src="./assets/hyperlink_icon.png" class="icon2"></a>
-            </span>              
+            <div class="prj-info">
+              <p class="card-text roboto bg-dark prj-overview">A blackjack website I crafted from scratch, showcasing my  technical skills and expertise as a developer with a passion for creating immersive gaming experiences.</p>
+              
+              <p class="grey">Vue.js</p>
+              
+              <span>
+                <a href="https://github.com/SlipperyyIce/blackjack" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
+                <a href="https://slipperyyice.github.io/blackjack/" target="_blank"><img src="./assets/hyperlink_icon.png" class="icon2"></a>
+              </span>   
+            </div>           
         </div>        
       </div> 
 
@@ -98,16 +103,18 @@ import { defineComponent } from 'vue'
         <div class="position-absolute start-0">
             <p class="aquamarine roboto">Featured Project</p>
             <h5 class="card-title pb-2">Topdown Shooter Game</h5>
-            <p class="card-text roboto bg-dark prj-overview">A game that I made for fun to see what I could build in a 48 hour timeframe for windows, where the aim to surive as long as possible to get the highest score.</p>         
-            <p class="grey">Unreal Engine </p>
-            
-            <span>
-              <a href="https://drive.google.com/file/d/1ul1SLk3j_DAZgh45coOdBps6bWz9aTHy/view?usp=share_link" target="_blank"><img src="./assets/windows_icon.png" class="icon "></a>
-            </span>              
+            <div class="prj-info">
+              <p class="card-text roboto bg-dark prj-overview">A game that I made for fun to see what I could build in a 48 hour timeframe for windows, where the aim to surive as long as possible to get the highest score.</p>         
+              <p class="grey">Unreal Engine </p>
+              
+              <span>
+                <a href="https://drive.google.com/file/d/1ul1SLk3j_DAZgh45coOdBps6bWz9aTHy/view?usp=share_link" target="_blank"><img src="./assets/windows_icon.png" class="icon "></a>
+              </span>  
+            </div>            
         </div>        
       </div>
   </div>
-  <div class="container text-white">
+  <div class="container container-s text-white">
     <div class="about text-start">
         <p id="contact" class="aquamarine roboto">02.&nbsp;</p>
         <p style="font-size: x-large; font-weight: bold;">Contact &nbsp;</p>
@@ -143,12 +150,17 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.par{
-  transform: translateZ(-20px);
-}
-.flex{
-  display: flex;
-  margin-bottom: 120px;
+@media (max-width: 765px) {
+  .prj-img{
+    margin-top: 80px;
+  }
+  .prj-info{
+    margin-top: 285px;
+  }
+  .card{
+    
+    margin-bottom: 260px;
+  }
 }
 .prj-img{
   max-width: 500px;
@@ -167,9 +179,11 @@ export default defineComponent({
   min-height: 580px;
 }
 
-.small_section{
-  min-height: 420px!important;
+.container-s{
+  max-width: 760px;
+  min-height: 400px;
 }
+
 .grey{
   color: #666666;
 }
@@ -187,11 +201,6 @@ export default defineComponent({
 }
 .aquamarine{
   color: aquamarine;
-}
-.section1{
-  left: 25%;
-  position: relative;
-  width: fit-content;
 }
 .btn-outline-success {
     --bs-btn-color: aquamarine;
@@ -217,14 +226,5 @@ export default defineComponent({
   width: 27px; 
   height: 27px;
 }
-.scrip_font{
-  font-family: "Scriptin";
-  font-size: 80px;
-}
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 </style>
