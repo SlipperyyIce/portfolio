@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import NavBar from './components/navBar.vue'
 import Main from './components/Main.vue'
+import Foot from './components/Footer.vue'
 </script>
 
 <template>
   <NavBar/>
   <Main/>
-  
+  <Foot/>
 </template>
 
 <style scoped>
