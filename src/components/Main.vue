@@ -11,6 +11,7 @@ import { defineComponent } from 'vue'
     <h1 class="roboto">Daniel Bajomo.</h1>
     <h1 class="roboto" style="opacity: 70%;">Computer Systems Gradaute (2023)</h1>
     <p class="roboto" style="max-width: 540px;" >I am an ambitious and dedicated London-based computer science student with a passion for building exceptional frontend and backend systems. Currently I’m a graduate of <span class="aquamarine">Queen Mary</span> University of London and am actively seeking opportunities to contribute to the tech industry. I strive to create innovative solutions that exceed expectations. </p>
+    <p class="roboto" style="max-width: 540px;" >In addition to my studies, I have participated in several projects that have allowed me to delve into the world of machine learning. These experiences have equipped me with a solid foundation in fundamental concepts such as supervised and unsupervised learning and classification.</p>
     <p class="roboto" style="max-width: 540px;" >In this portfolio, I invite you to explore the projects I have undertaken, showcasing my skills, dedication.</p>
     <button type="button" class="btn btn-outline-success roboto" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get in Touch  </button>
     </div>
@@ -122,7 +123,8 @@ import { defineComponent } from 'vue'
     </div>
     <div style="text-align: left; max-width: 450px;">
         <p class="white roboto">Have any questions or inquiries? Get in touch with me!</p>
-        <p class="white roboto">Email: <span style="opacity: 100%!important;"><a class="aquamarine" href="mailto:example@example.com">btt.bajomo@gmail.com</a></span> </p>
+        <p class="white roboto">Email: <span style="opacity: 100%!important;"><a class="aquamarine" href="mailto:btt.bajomo@gmail.com">btt.bajomo@gmail.com</a></span> </p>
+        <button type="button" class="btn btn-outline-success roboto" @click="downloadPDF">Download CV </button>
         </div>
   </div>
   
@@ -138,6 +140,13 @@ export default defineComponent({
           var clamped_x = Math.min(x,260) // picks smaller value to clamp max value
           //this.$refs.test.style.transform = "translateX(" + clamped_x + "px)";
 
+        },
+        downloadPDF() {
+          var fileUrl = 'CV.pdf';
+          var link = document.createElement('a');
+          link.href = fileUrl;
+          link.download = 'CV.pdf';
+          link.click();
         },
 
     },
