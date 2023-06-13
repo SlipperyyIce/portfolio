@@ -9,9 +9,9 @@ import { defineComponent } from 'vue'
     <div class="text-white text-start">
     <p class="aquamarine">Hi, my name is</p>
     <h1 class="roboto">Daniel Bajomo.</h1>
-    <h1 class="roboto" style="opacity: 70%;">Computer Systems Gradaute (2023)</h1>
-    <p class="roboto" style="max-width: 540px;" >I am an ambitious and dedicated London-based computer science student with a passion for building exceptional frontend and backend systems. Currently I’m a graduate of <span class="aquamarine">Queen Mary</span> University of London and am actively seeking opportunities to contribute to the tech industry. I strive to create innovative solutions that exceed expectations. </p>
-    <p class="roboto" style="max-width: 540px;" >In addition to my studies, I have participated in several projects that have allowed me to delve into the world of machine learning. These experiences have equipped me with a solid foundation in fundamental concepts such as supervised and unsupervised learning and classification.</p>
+    <h1 class="roboto" style="opacity: 70%;">Computer Systems Engineering Gradaute (2023)</h1>
+    <p class="roboto" style="max-width: 540px;" >I am a conscientious and dedicated London-based computer science graduate with a passion for building exceptional frontend and backend systems. I recently graduated from <span class="aquamarine">Queen Mary</span> University of London and am actively seeking opportunities to contribute to the tech industry. I strive to create innovative solutions that exceed expectations.</p>  
+    <p class="roboto" style="max-width: 540px;" >In addition to my studies, I have participated in several projects that have allowed me to delve into the world of machine learning. These experiences have equipped me with a solid foundation in fundamental concepts such as supervised and unsupervised deep learning and classification.</p>
     <p class="roboto" style="max-width: 540px;" >In this portfolio, I invite you to explore the projects I have undertaken, showcasing my skills, dedication.</p>
     <button type="button" class="btn btn-outline-success roboto" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get in Touch  </button>
     </div>
@@ -24,7 +24,7 @@ import { defineComponent } from 'vue'
         <div style="width: 300px; border: 1px solid white; margin-bottom: 1rem; opacity: 40%;"></div>
       </div>
       <div>
-      <p class="white roboto" style="max-width: 540px;">I am a <span class="aquamarine" style="opacity: 100%!important;">highly motivated</span> computer science graduate with a strong foundation in programming and software development.</p>
+      <p class="white roboto" style="max-width: 540px;">I am a <span class="aquamarine" style="opacity: 100%!important;">highly motivated</span> computer science graduate with a strong foundation in programming and software engineering.</p>
       <p class="white roboto" style="max-width: 540px;"> I have experience in full-stack web development, database management, and system design. Passionate about technology, I actively seek out opportunities to stay updated with the latest advancements in the field. With excellent problem-solving skills and a drive for excellence, I am eager to contribute my expertise to a dynamic and innovative company. Let's create groundbreaking solutions together!</p>
       </div>
     </div>
