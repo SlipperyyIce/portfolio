@@ -9,7 +9,7 @@ import { defineComponent } from 'vue'
     <div class="text-white text-start">
     <p class="aquamarine">Hi, my name is</p>
     <h1 class="roboto">Daniel Bajomo.</h1>
-    <h1 class="roboto" style="opacity: 70%;">Computer Systems Engineering Gradaute (2023)</h1>
+    <h1 class="roboto" style="opacity: 70%;">Computer Systems Engineering Graduate (2023)</h1>
     <p class="roboto" style="max-width: 540px;" >I am a conscientious and dedicated London-based computer science graduate with a passion for building exceptional frontend and backend systems. I recently graduated from <span class="aquamarine">Queen Mary</span> University of London and am actively seeking opportunities to contribute to the tech industry. I strive to create innovative solutions that exceed expectations.</p>  
     <p class="roboto" style="max-width: 540px;" >In addition to my studies, I have participated in several projects that have allowed me to delve into the world of machine learning. These experiences have equipped me with a solid foundation in fundamental concepts such as supervised and unsupervised deep learning and classification.</p>
     <p class="roboto" style="max-width: 540px;" >In this portfolio, I invite you to explore the projects I have undertaken, showcasing my skills, dedication.</p>
