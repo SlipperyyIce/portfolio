@@ -36,22 +36,42 @@ import { defineComponent } from 'vue'
         <p style="font-size: x-large; font-weight: bold;">Recent Projects&nbsp;</p>
         <div style="width: 250px; border: 1px solid white; margin-bottom: 1rem; opacity: 40%;"></div>
       </div>
-      
-      <div class="card bg-black text-end position-relative">
-        <div class="card-body position-absolute top-0 start-0 p-0">
-          <img src="./assets/Expense_Cover.png" class="card-img-top prj-img position-relative start-0 " alt="...">       
+
+      <div class="card bg-black text-start position-relative">
+        <div class="card-body position-absolute top-0 end-0 p-0">
+          
+          <img src='./assets/Expense_Cover.png' class="card-img-top prj-img position-relative end-0 " alt="...">       
         </div>
-        <div class="position-absolute end-0">
+        <div class="position-absolute start-0">
             <p class="aquamarine roboto">Featured Project</p>
             <h5 class="card-title pb-2">Expenses App</h5>
             <div class="prj-info">
-              <p class="card-text roboto bg-dark prj-overview">This project shows an expense application I made using Google's Firebase api. Allowing users to submit expenses which can then be approved or rejected by a line manager.</p>            
+              <p class="card-text roboto bg-dark prj-overview">This project shows an expense application I made using Google's Firebase api. Allowing users to submit expenses which can then be approved or rejected by a line manager.</p>
               <p class="grey">Firebase API&nbsp;&nbsp;  Next.js</p>
-            
               <span>
                 <a href="https://github.com/SlipperyyIce/fdm-expenses-app-main" target="_blank"><img src="./assets/git_icon.png" class="icon "></a>
                 <a href="https://slipperyyice.github.io/fdm-expenses-app-main/" target="_blank"><img src="./assets/hyperlink_icon.png" class="icon2"></a>
               </span> 
+            </div>             
+        </div>        
+      </div>
+
+      
+      <div class="card bg-black text-end position-relative">
+        <div class="card-body position-absolute top-0 start-0 p-0">
+          <img src="./assets/Hymn_Cover.png" class="card-img-top prj-img position-relative start-0 " alt="...">       
+        </div>
+        <div class="position-absolute end-0">
+            <p class="aquamarine roboto">Featured Project</p>
+            <h5 class="card-title pb-2">Redemption Hymnal</h5>
+            <div class="prj-info">
+              <p class="card-text roboto bg-dark prj-overview">A Bible hymnal app that includes a collection of hymns and songs. It offers features such as the ability to mark hymns as favorites and view your hymn history for an optimal experience.</p>            
+              
+              <p class="grey">React Native &nbsp;&nbsp; Expo.js</p>
+              <span>
+                <a href="https://apps.apple.com/us/app/redemption-hymnal/id6467019391?platform=iphone" target="_blank"><img src="./assets/apple_icon.png" class="icon "></a>
+              </span> 
+          
             </div>             
         </div>        
       </div> 
@@ -124,6 +144,7 @@ import { defineComponent } from 'vue'
     <div style="text-align: left; max-width: 450px;">
         <p class="white roboto">Have any questions or inquiries? Get in touch with me!</p>
         <p class="white roboto">Email: <span style="opacity: 100%!important;"><a class="aquamarine" href="mailto:btt.bajomo@gmail.com">btt.bajomo@gmail.com</a></span> </p>
+        <p class="white roboto">LinkedIn: <span style="opacity: 100%!important;"><a class="aquamarine" href="https://www.linkedin.com/in/daniel-bajomo-424955280/">in/daniel-bajomo-424955280/ </a></span> </p>
         <button type="button" class="btn btn-outline-success roboto" @click="downloadPDF">Download CV </button>
         </div>
   </div>
@@ -131,7 +152,52 @@ import { defineComponent } from 'vue'
 </template>
 
 <script lang="ts">
+import ProjectCard from './ProjectCard.vue';
+
+
+
 export default defineComponent({
+    components: {
+      ProjectCard,
+    },
+    data() {
+      return {projects: [
+      {
+        title: 'Expenses App',
+        image: './assets/Expense_Cover.png',
+        featured: 'Featured Project',
+        description: "This project shows an expense application I made using Google's Firebase API. Allowing users to submit expenses which can then be approved or rejected by a line manager.",
+        technologies: 'Firebase API   Next.js',
+        github: 'https://github.com/SlipperyyIce/fdm-expenses-app-main',
+        link: 'https://slipperyyice.github.io/fdm-expenses-app-main/',
+      },
+      {
+        title: 'DL Classification',
+        image: './assets/DL_Cover.png',
+        featured: 'Featured Project',
+        description: 'MATLAB code for the deep learning model I trained for my final year project to classify different signals.',
+        technologies: 'MATLAB',
+        github: 'https://github.com/SlipperyyIce/DeepLearning-SpectrumSensing',
+      },
+      {
+        title: 'Blackjack',
+        image: './assets/Blackjack_Cover.png',
+        featured: 'Featured Project',
+        description: 'A blackjack website I crafted from scratch, showcasing my technical skills and expertise as a developer with a passion for creating immersive gaming experiences.',
+        technologies: 'Vue.js',
+        github: 'https://github.com/SlipperyyIce/blackjack',
+        link: 'https://slipperyyice.github.io/blackjack/',
+      },
+      {
+        title: 'Topdown Shooter Game',
+        image: './assets/Shooter_Cover.png',
+        featured: 'Featured Project',
+        description: 'A game that I made for fun to see what I could build in a 48-hour timeframe for Windows, where the aim is to survive as long as possible to get the highest score.',
+        technologies: 'Unreal Engine',
+        link: 'https://drive.google.com/file/d/1ul1SLk3j_DAZgh45coOdBps6bWz9aTHy/view?usp=share_link',
+      },
+    ]}
+      },
 
     methods: {
         horizontal_parrallax(){
